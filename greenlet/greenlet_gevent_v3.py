@@ -1,4 +1,6 @@
-from gevent import monkey; monkey.patch_socket()
+from gevent import monkey; 
+#monkey.patch_socket() only using patch_socket, it will not work
+monkey.patch_all()
 import gevent
 import urllib2
 
